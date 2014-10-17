@@ -1,0 +1,23 @@
+{
+  "name": "switch tabs",
+  "description": "number of windows open and tabs in each window including(title and url), the selected is in red. You can click and switch to different tab, enjoy!!",
+  "version": "1.0",
+  "icons": {
+      "32":"icons/gotab32.png",
+      "64":"icons/gotab.png"
+   },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*","widget"
+  ],
+  "background":{
+    "scripts":["js/background.js"]
+    },
+  "browser_action": {
+      "default_title": "switch tabs.",
+      "default_icon": "icons/icon.png",
+      "default_popup": "popup.html",
+      "js":["js/jquery-2.1.1.min.js",
+           "js/popup.js"]
+  },
+  "manifest_version": 2
+}
