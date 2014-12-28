@@ -1,0 +1,26 @@
+// Copyright 2014 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// Use the <code>chrome.widget</code> API to query whatever.
+namespace widget {
+
+  dictionary Window {
+    long id;
+  };
+
+  dictionary Tab {
+    long id;
+    DOMString title;
+    DOMString url;
+    boolean isSelected;
+  };
+
+  callback WindowCallback = void (Window[] windows);
+  callback TabsForWindowCallback = void (Tab[] tabs);
+
+  interface Functions {
+    static void getWindows(WindowCallback callback);
+    static void getTabsForWindow(Window window, TabsForWindowCallback callback);
+  };
+};
