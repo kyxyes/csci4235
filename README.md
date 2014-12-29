@@ -15,6 +15,7 @@ projects of extensions and chromium api
 
 =====================
 <p><b>About Project GOTabs</b></p>
+This includes a new written JavaScript-accessible API (chrome.widget)for Chrome extension.
 Number of windows open and tabs(in BadgeText) in each window including titles, url and selected tab(here I use red font). 
 You can also click title in pupup and switch to different tab.
 Because I think this will make this extension more meaningful. So I add 'id' in dictionary Tab of widget.idl.
